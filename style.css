@@ -7,13 +7,22 @@
 }
 body{
     font-family: 'Nunito', sans-serif;
+    background-color: #fafafa;
+    position: relative;
+    overflow-x: hidden;
 }
+img{
+    max-width: 100%;
+}
+
+
 .side{
     background-color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.85), 0 1px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.12);
     height: 100vh;
     width: 20%;
     padding-left: 30px;
+    position: fixed;
 }
 
 .insta{
@@ -37,11 +46,105 @@ body{
     background-color:#fafafa;
 }
 .flex .icon{
-    font-size: 25px;
+    font-size: 20px;
+   
 }
 #active{
     font-weight: bold;
 }
 .last{
     margin-top: 45px;
+}
+
+section.feed{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    left: 27%;
+    width: 80%;
+}
+
+.posts{
+    margin-top: 30px;
+}
+
+
+.statuses{
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 20vh;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.statuses > div, .img{
+    width: 60px;
+   
+}
+.statuses span{
+    font-size: 11px;
+    color: #9c9a9a;
+    text-align: center;
+    display: block;
+}
+.statuses  img, .img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+.follow{
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+ .flex1, .flex2, .flex11{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.flex1{
+    gap: 60px;
+    margin: 10px 0;
+}
+.flex11{
+    gap: 105px;
+    margin: 10px 0;
+}
+.flex11 span{
+    font-size: 12px;
+}
+.flex11 h5{
+    color: #7f7d7d;
+    font-size: 16px;
+}
+#acc{
+    color: #159df6;
+}
+.flex2 .img{
+    width: 60px;
+    
+}
+.flex2 .img img{
+    border-radius: 50%;
+}
+.follow-img img{
+    width: 40px;
+}
+
+.name span{
+    color: #7f7d7d;
+   font-size: 15px;
+    
+}
+.follow-name span{
+    font-size: 12px;
 }
